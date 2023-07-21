@@ -1,0 +1,87 @@
+body {
+    background-color: #F7ECDE;
+}
+
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    color: rgb(53, 46, 40);
+    font-weight: 500;
+    line-height: 60px;
+    position: relative;
+
+}
+
+h1::after {
+    content: '';
+    background-color: #fec260;
+    position: absolute;
+    width: 237px;
+    height: 20px;
+    bottom: 2%;
+    left: 41%;
+    z-index: -1;
+    transition: all .4s;
+}
+
+h1:hover::after {
+    height: 40px;
+}
+
+h2 {
+    font-family: 'Righteous', cursive;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 30px;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+}
+
+.headline {
+    position: relative;
+
+}
+
+.headline::after {
+    content: '';
+    border-bottom: dotted 2px black;
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    top: 100px;
+    left: 0%;
+}
+
+.fa-bookmark {
+    font-size: 25px;
+    font-weight: 900;
+    line-height: 25px;
+    color: rgb(33, 37, 41);
+}
+
+.sub-btn {
+    background-color: #d1512d;
+    width: 150px;
+    padding: 7px;
+    border-radius: 6px;
+    border: none;
+    color: white;
+}
+
+.sub-btn:hover {
+    background-color: #bb4120;
+}
+
+.btn-info {
+    position: relative;
+}
+
+.btn-info::after {
+    content: '';
+    border-bottom: dotted 2px black;
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    top: 30px;
+    left: 0%;
+}

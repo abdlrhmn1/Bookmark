@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/all.min.css">
+    <link rel="stylesheet" href="Css/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap');
+    </style>
+    <title>Bookmark</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="headline my-5 text-center">
+            <h1 class="mb-5">Bookmark</h1>
+            <i class="fa-solid fa-bookmark"></i>
+            <h2 class="d-inline-block mt-5">Bookmark your favorite sites</h2>
+            <i class="fa-solid fa-bookmark"></i>
+        </div>
+        <div class="info">
+            <label for="siteName" class="mb-2 fw-bold"><i class="fa-solid fa-book-bookmark pe-2"></i> Site Name</label>
+            <input type="text" id="siteName" class="form-control mb-4" placeholder="Bookmark Name" required>
+            <label for="siteURL" class="mb-2 fw-bold"><i class="fa-solid fa-link pe-2 pe-2"></i> Site URL</label>
+            <input type="text" placeholder="Website URL" id="siteURL" class="form-control mb-4" required>
+        </div>
+        <div class="btn-info text-center mb-5">
+            <button class="sub-btn" id="btn" onclick="addSite()" type="submit">Submit</button>
+        </div>
+        <table class="table table-striped text-center">
+            <thead>
+                <th>Index</th>
+                <th>Website Name</th>
+                <th>Visit</th>
+                <th>Delete</th>
+            </thead>
+            <tbody id="tableRow">
+
+            </tbody>
+        </table>
+    </div>
+    <script src="JS/script.js"></script>
+</body>
+
+</html>
